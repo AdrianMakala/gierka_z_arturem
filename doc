@@ -1,4 +1,5 @@
-postacie z atrybutami
-skille - szkoly
-przedmioty - typy, generatory
-content
+To do:
+Player: class, atributes, skills (with categories), eq, more interaction (look, pick up, etc)
+Items: class, types, generators
+
+Content - story, views
