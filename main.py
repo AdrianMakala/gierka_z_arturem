@@ -1,3 +1,4 @@
+import os
 import generate_map
 import player
 
@@ -14,7 +15,7 @@ while True:
     game_map = copy_game_map.copy()
     game_map_obj.set_player_position(game_map, player.get_position())
     print(game_map)
-    print(player.get_position())
+    # print(player.get_position())
 
     key = input(": ")
     if key in controls:
@@ -22,4 +23,6 @@ while True:
 
     else:
         print("WRONG COMMAND")
+
+    os.system('cls')
 

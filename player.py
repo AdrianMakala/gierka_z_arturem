@@ -7,13 +7,13 @@ class Player:
         return self.x_position, self.y_position
 
     def go_up(self):
-        self.x_position += 1
+        self.x_position -= 1
 
     def go_left(self):
         self.y_position -= 1
 
     def go_down(self):
-        self.x_position -= 1
+        self.x_position += 1
 
     def go_right(self):
         self.y_position += 1
