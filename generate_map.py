@@ -14,12 +14,13 @@ class Map:
 
         self.matrix_size = (self.size, self.size)
         self.matrix = np.zeros(self.matrix_size)
+        self.generated_map = self.gen_map()
 
     def get_position(self, a, b):
         return self.matrix[a][b]
 
     def set_player_position(self, matrix, player_position):
-        matrix[player_position] = 100
+        matrix[player_position] += 100
 
     def gen_map(self):
         for counter in range(len(self.all_ratios)):
@@ -29,7 +30,6 @@ class Map:
                 marker = 2
             elif counter == 2:
                 marker = 4
-
             num_of_objects = self.size * self.size * (self.all_ratios[counter] / 10000)
             indices = np.random.choice(np.arange(self.matrix.size), replace=False, size=int(self.matrix.size * num_of_objects))
 
@@ -45,3 +45,4 @@ class Map:
                     # print("ADDED VALUE {} X:{}, Y:{}".format(marker, 0, i))
 
         return self.matrix
+

@@ -1,6 +1,5 @@
 To do:
-Player: class, attributes, skills (with categories), eq, more interaction (look, pick up, etc), fight mechanism
-Monsters: like player
+Player: skills (with categories), fight mechanism - to improve
 Items: class, types, generators
-Map: Fix player movement, Biom - what do we want to do with it?
+Map: Biom - what do we want to do with it?
 Content - story, views
